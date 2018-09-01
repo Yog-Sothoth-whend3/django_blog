@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('#sent').on('click',function()
     {
         var a = $('[name = e-mail]').val();
-        var ul = '/email/'+'?info='+a
+        var ul = '/email/'+'?info='+a+'/'
         $.ajax({
 
             type:"get",
