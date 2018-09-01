@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'myblog',
         'USER':'admin',
-        'PASSWORD':'Whend1969126372..',
+        'PASSWORD':'**********'
         'HOST':'122.152.234.185',
         'PORT':'3306'
     }
@@ -140,6 +140,6 @@ EMAIL_PORT = 25
 #发送邮件的邮箱
 EMAIL_HOST_USER = 'kinghow_me@163.com'
 #在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'whend3'
+EMAIL_HOST_PASSWORD = '*********'
 #收件人看到的发件人
 EMAIL_FROM = 'kinghow_me@163.com'
