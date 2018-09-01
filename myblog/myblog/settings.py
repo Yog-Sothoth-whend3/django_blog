@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'd+@d#s!)0y+m!ij0zagnoc6n(n=p4r54l7^zd3%@emuy#*eomw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True    
+DEBUG = False   
 
 ALLOWED_HOSTS = ["*"]
 
@@ -124,6 +124,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/django_blog/myblog/static'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 
