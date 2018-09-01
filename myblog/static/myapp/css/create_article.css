@@ -1,0 +1,22 @@
+#create_article{
+    position: absolute;
+    left: 30%;
+    top: 20%
+
+
+}
+#decide{
+
+    position: absolute;
+    top: 105%;
+    left: 42%;
+
+}
+#user_info{
+
+    text-align: center;
+    position: absolute;
+    right: 10%;
+
+
+}

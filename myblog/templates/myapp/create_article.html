@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'myapp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/create_article.css' %}">
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="{% static 'myapp/js/bootstrap.js' %}"></script>
+    <title>撰写你的文章</title>
+</head>
+<body>
+
+    <div id ="create_article">
+
+
+            <form action="/release/" method="post">
+                {% csrf_token %}
+                <textarea cols="80" name="msg_title" rows="3" placeholder="文章标题" class="ipt-txt" maxlength="30" ></textarea>
+
+
+        
+
+                <textarea cols="80" name="msg_content" rows="12" placeholder="请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。" maxlength="1000" class="ipt-txt"></textarea>
+            
+                <input type="submit" class="btn btn-success" value="发布" id = 'decide'>
+            
+            </form>
+
+
+
+
+    </div>
+
+    <div id = "user_info">
+
+
+
+        <h2> 欢迎：<a href="/quits/">{{username}} </a></h2>
+
+
+
+    </div>
+
+
+</body> 
+</html>

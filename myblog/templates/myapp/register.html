@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="{% static 'myapp/js/bootstrap.js' %}"></script>
+    <script src="{% static 'myapp/js/register.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'myapp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/css/register.css' %}">
+    <title>注册</title>
+</head>
+<body background = "{% static 'myapp/image/i.png' %}" >
+
+
+        <div>
+
+                <ul class="nav nav-pills">
+                        <li id = "one" role="presentation" class="active"><a href="{% url 'myapp:index' %}">Home</a></li>
+                        <li  id = "two" role="presentation" > <a href="{% url 'myapp:login' %}">登陆</a></li>
+                        <li  id = " three" role="presentation"><a href="{% url 'myapp:register' %}">注册</a></li>
+                      </ul>
+    
+    
+        </div>
+
+
+
+
+
+
+
+
+
+        <h1>注册！</h1>
+
+        <div id = "register">
+
+            <form action="/registering/" method="post" style="text-align: center">
+                {% csrf_token %}
+                昵称: <input type="text" name="username" placeholder="Username" /></br>
+                邮箱: <input type="email" name="e-mail"  placeholder="e-mail"/></br>
+                密码: <input type="password" name="password" placeholder="password" /></br>
+                验证: <input type="text" name="ver" placeholder="verification code"/> </br>
+                <input type="submit" class="btn btn-success" id = "decide" value="注册">
+            </form>
+                 <button class="btn btn-success" id = "sent">发送邮件</button> </br>
+                 
+
+
+        </div>
+              
+</body>
+</html>

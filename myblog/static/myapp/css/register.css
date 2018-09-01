@@ -1,0 +1,26 @@
+#register{
+    width: 600px;
+    height: 450px;
+    position:absolute;
+    right: 31.3% ;
+    top: 20%;}
+
+h1{
+
+    text-align: center;
+}
+
+#decide{
+
+    position: absolute;
+    align-content: center;
+
+
+}
+
+
+ #sent{
+    position: absolute;
+    right: 18%;
+    top: 5.7%;
+} 
