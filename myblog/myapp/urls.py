@@ -9,7 +9,7 @@ urlpatterns = [
     #注册
     path('register/',register,name = 'register'),
     path('email/',emails),
-    path('registering/',registering,),
+    path('registering/',registering),
     #首页
     
     path('index/',index,name = 'index'),
